@@ -1,3 +1,8 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
+# ... keep all your existing imports below ...
 import os
 import tempfile
 import streamlit as st
