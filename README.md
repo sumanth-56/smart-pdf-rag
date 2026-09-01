@@ -24,9 +24,4 @@ A Document Retrieval-Augmented Generation (RAG) web application that enables int
 
 ---
 
-## 💻 Local Setup & Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/sumanth-56/smart-pdf-rag.git](https://github.com/sumanth-56/smart-pdf-rag.git)
-   cd smart-pdf-rag
