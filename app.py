@@ -5,7 +5,7 @@ import streamlit as st
 from dotenv import load_dotenv
 
 from pdf_loader import load_and_chunk_pdf
-from vector_store import create_vector_store
+from vector_store import create_or_get_vector_store
 from rag_chain import get_rag_chain
 
 # Load environment variables (.env file)
@@ -41,7 +41,7 @@ if process_btn and uploaded_file is not None:
             chunks = load_and_chunk_pdf(tmp_path)
             
             # Step 2: Store in ChromaDB
-            vector_store = create_vector_store(chunks=chunks)
+            vector_store = create_or_get_vector_store(chunks=chunks)
             
             # Step 3: Initialize RAG Chain
             chain, _ = get_rag_chain(vector_store)
